@@ -1,6 +1,6 @@
 # Jaeger MKII
 
-![Jaeger photo](http://www.bilbaodynamics.com/images/Fotos_Jaeger_MKI/IMG_9595.jpg)
+![Jaeger photo](http://www.bilbaodynamics.com/images/DSC_4733.png)
 
 ## What's this?
 
