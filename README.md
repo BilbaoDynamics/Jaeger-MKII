@@ -4,7 +4,7 @@
 
 ## What's this?
 
-
+An open source Micro rover robot
 
 ## License
 
