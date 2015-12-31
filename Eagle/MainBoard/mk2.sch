@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3773,22 +3773,6 @@ Source: AVX .. aphvc.pdf</description>
 <rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
 </package>
-<package name="R1005">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
-<wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
-<wire x1="0.245" y1="-0.224" x2="-0.245" y2="-0.224" width="0.1524" layer="51"/>
-<wire x1="-1.473" y1="0.483" x2="1.473" y2="0.483" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.483" x2="1.473" y2="-0.483" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.483" x2="-1.473" y2="-0.483" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.483" x2="-1.473" y2="0.483" width="0.0508" layer="39"/>
-<smd name="1" x="-0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
-<smd name="2" x="0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
-<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.2951" layer="51"/>
-<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-</package>
 <package name="R1206">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
 <wire x1="0.9525" y1="-0.8128" x2="-0.9652" y2="-0.8128" width="0.1524" layer="51"/>
@@ -5274,6 +5258,28 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <rectangle x1="-0.15" y1="0.05" x2="0.15" y2="0.1" layer="51"/>
 <rectangle x1="-0.15" y1="-0.1" x2="0.15" y2="-0.05" layer="51"/>
 </package>
+<package name="PRL1632">
+<description>&lt;b&gt;PRL1632 are realized as 1W for 3.2 × 1.6mm(1206)&lt;/b&gt;&lt;p&gt;
+Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
+<wire x1="0.7275" y1="-1.5228" x2="-0.7277" y2="-1.5228" width="0.1524" layer="51"/>
+<wire x1="0.7275" y1="1.5228" x2="-0.7152" y2="1.5228" width="0.1524" layer="51"/>
+<smd name="2" x="0.822" y="0" dx="1" dy="3.2" layer="1"/>
+<smd name="1" x="-0.822" y="0" dx="1" dy="3.2" layer="1"/>
+<text x="-1.4" y="1.8" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.4" y="-3" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.8" y1="-1.6" x2="-0.4" y2="1.6" layer="51"/>
+<rectangle x1="0.4" y1="-1.6" x2="0.8" y2="1.6" layer="51"/>
+</package>
+<package name="R01005">
+<smd name="1" x="-0.1625" y="0" dx="0.2" dy="0.25" layer="1"/>
+<smd name="2" x="0.1625" y="0" dx="0.2" dy="0.25" layer="1"/>
+<text x="-0.4" y="0.3" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.4" y="-1.6" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.2" y1="-0.1" x2="-0.075" y2="0.1" layer="51"/>
+<rectangle x1="0.075" y1="-0.1" x2="0.2" y2="0.1" layer="51"/>
+<rectangle x1="-0.15" y1="0.05" x2="0.15" y2="0.1" layer="51"/>
+<rectangle x1="-0.15" y1="-0.1" x2="0.15" y2="-0.05" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="C-EU">
@@ -6059,15 +6065,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="R1005" package="R1005">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
 <device name="R1206" package="R1206">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
@@ -6780,6 +6777,24 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </technologies>
 </device>
 <device name="1812X7R" package="1812X7R">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PRL1632" package="PRL1632">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="01005" package="R01005">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -14936,7 +14951,7 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <part name="BUZZ1" library="Jaegger_MKII" deviceset="KTG1205C" device=""/>
 <part name="BLUETOOTH1" library="pinhead" deviceset="PINHD-1X4" device="" value="HC-06 Female Header"/>
 <part name="GND33" library="supply1" deviceset="GND" device=""/>
-<part name="U11" library="linear" deviceset="*555" device="D" technology="UA"/>
+<part name="U9" library="linear" deviceset="*555" device="D" technology="UA"/>
 <part name="C20" library="rcl" deviceset="C-EU" device="C0805" value="0.1µF"/>
 <part name="C21" library="rcl" deviceset="C-EU" device="C0805" value="0.1µF"/>
 <part name="GND34" library="supply1" deviceset="GND" device=""/>
@@ -14949,8 +14964,8 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <part name="IR_REC1" library="Jaegger_MKII" deviceset="TSMP77000TR" device=""/>
 <part name="IR_REC2" library="Jaegger_MKII" deviceset="TSMP77000TR" device=""/>
 <part name="GND37" library="supply1" deviceset="GND" device=""/>
-<part name="U$1" library="Jaegger_MKII" deviceset="KPA-3010F3C" device=""/>
-<part name="U$2" library="Jaegger_MKII" deviceset="KPA-3010F3C" device=""/>
+<part name="D1" library="Jaegger_MKII" deviceset="KPA-3010F3C" device=""/>
+<part name="D2" library="Jaegger_MKII" deviceset="KPA-3010F3C" device=""/>
 <part name="R17" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="R18" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="GND38" library="supply1" deviceset="GND" device=""/>
@@ -14961,6 +14976,7 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <part name="GND28" library="supply1" deviceset="GND" device=""/>
 <part name="R20" library="Panasonic-Trimmer_Potentiometers" deviceset="EVM" device="-2N" technology="2NSX80B24" value=" 20KOHM "/>
 <part name="R21" library="Panasonic-Trimmer_Potentiometers" deviceset="EVM" device="-2N" technology="2NSX80B24" value=" 20KOHM "/>
+<part name="F1" library="rcl" deviceset="R-EU_" device="R1206"/>
 </parts>
 <sheets>
 <sheet>
@@ -15113,8 +15129,8 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <attribute name="VALUE" x="-222.14356875" y="98.588896875" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND26" gate="1" x="-236.22" y="93.98"/>
-<instance part="SW2" gate="G$1" x="-223.52" y="20.32"/>
-<instance part="P+3" gate="VCC" x="-213.36" y="40.64"/>
+<instance part="SW2" gate="G$1" x="-213.36" y="20.32"/>
+<instance part="P+3" gate="VCC" x="-200.66" y="40.64"/>
 <instance part="R7" gate="G$1" x="-30.48" y="-132.08" rot="R180"/>
 <instance part="LED5" gate="G$1" x="-45.72" y="-132.08" rot="R90"/>
 <instance part="LED6" gate="G$1" x="2.54" y="-101.6" rot="R90"/>
@@ -15193,7 +15209,7 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <attribute name="VALUE" x="-158.75" y="-60.96" size="1.778" layer="96"/>
 </instance>
 <instance part="GND33" gate="1" x="-170.18" y="-60.96"/>
-<instance part="U11" gate="A" x="208.28" y="10.16"/>
+<instance part="U9" gate="A" x="208.28" y="10.16"/>
 <instance part="C20" gate="G$1" x="248.92" y="0"/>
 <instance part="C21" gate="G$1" x="177.8" y="2.54"/>
 <instance part="GND34" gate="1" x="248.92" y="-12.7"/>
@@ -15206,10 +15222,22 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <instance part="IR_REC1" gate="G$1" x="187.96" y="-76.2"/>
 <instance part="IR_REC2" gate="G$1" x="231.14" y="-76.2"/>
 <instance part="GND37" gate="1" x="241.3" y="-91.44"/>
-<instance part="U$1" gate="G$1" x="213.36" y="-35.56" rot="R270"/>
-<instance part="U$2" gate="G$1" x="231.14" y="-35.56" rot="R270"/>
-<instance part="R17" gate="G$1" x="213.36" y="-48.26" rot="R270"/>
-<instance part="R18" gate="G$1" x="231.14" y="-48.26" rot="R270"/>
+<instance part="D1" gate="G$1" x="213.36" y="-35.56" smashed="yes" rot="R270">
+<attribute name="VALUE" x="196.596" y="-36.322" size="1.778" layer="96"/>
+<attribute name="NAME" x="217.17" y="-36.516" size="1.778" layer="95"/>
+</instance>
+<instance part="D2" gate="G$1" x="231.14" y="-35.56" smashed="yes" rot="R270">
+<attribute name="VALUE" x="237.236" y="-36.83" size="1.778" layer="96"/>
+<attribute name="NAME" x="225.044" y="-36.516" size="1.778" layer="95"/>
+</instance>
+<instance part="R17" gate="G$1" x="213.36" y="-48.26" smashed="yes" rot="R270">
+<attribute name="NAME" x="207.772" y="-50.8254" size="1.778" layer="95"/>
+<attribute name="VALUE" x="215.138" y="-50.546" size="1.778" layer="96"/>
+</instance>
+<instance part="R18" gate="G$1" x="231.14" y="-48.26" smashed="yes" rot="R270">
+<attribute name="NAME" x="225.806" y="-50.8254" size="1.778" layer="95"/>
+<attribute name="VALUE" x="232.918" y="-50.546" size="1.778" layer="96"/>
+</instance>
 <instance part="GND38" gate="1" x="213.36" y="-58.42"/>
 <instance part="GND39" gate="1" x="231.14" y="-58.42"/>
 <instance part="GND20" gate="1" x="-238.76" y="-68.58"/>
@@ -15218,6 +15246,7 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <instance part="GND28" gate="1" x="-195.58" y="-68.58"/>
 <instance part="R20" gate="A" x="223.52" y="48.26"/>
 <instance part="R21" gate="A" x="248.92" y="33.02" rot="R270"/>
+<instance part="F1" gate="G$1" x="-226.06" y="20.32"/>
 </instances>
 <busses>
 </busses>
@@ -15591,7 +15620,7 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <pinref part="GND35" gate="1" pin="GND"/>
 <wire x1="198.12" y1="2.54" x2="193.04" y2="2.54" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="2.54" x2="193.04" y2="-5.08" width="0.1524" layer="91"/>
-<pinref part="U11" gate="A" pin="GND"/>
+<pinref part="U9" gate="A" pin="GND"/>
 <pinref part="C21" gate="G$1" pin="2"/>
 <wire x1="193.04" y1="-5.08" x2="193.04" y2="-7.62" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="-2.54" x2="177.8" y2="-5.08" width="0.1524" layer="91"/>
@@ -15804,7 +15833,7 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <label x="-172.72" y="-38.1" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U11" gate="A" pin="V+"/>
+<pinref part="U9" gate="A" pin="V+"/>
 <wire x1="218.44" y1="2.54" x2="220.98" y2="2.54" width="0.1524" layer="91"/>
 <label x="223.52" y="2.54" size="1.778" layer="95"/>
 <wire x1="220.98" y1="2.54" x2="238.76" y2="2.54" width="0.1524" layer="91"/>
@@ -16011,13 +16040,6 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <wire x1="-40.64" y1="-111.76" x2="-35.56" y2="-111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="MOSI" class="0">
-<segment>
-<pinref part="ICSP" gate="A" pin="4"/>
-<wire x1="157.48" y1="38.1" x2="144.78" y2="38.1" width="0.1524" layer="91"/>
-<label x="152.4" y="38.1" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="MISO/IR_REAR_LEFT" class="0">
 <segment>
 <pinref part="ICSP" gate="A" pin="1"/>
@@ -16033,18 +16055,6 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <pinref part="BACK_IR_SENSOR" gate="A" pin="4"/>
 <wire x1="78.74" y1="40.64" x2="96.52" y2="40.64" width="0.1524" layer="91"/>
 <label x="96.52" y="40.64" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SCK" class="0">
-<segment>
-<pinref part="ICSP" gate="A" pin="3"/>
-<wire x1="137.16" y1="38.1" x2="121.92" y2="38.1" width="0.1524" layer="91"/>
-<label x="121.92" y="38.1" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="BACK_IR_SENSOR" gate="A" pin="1"/>
-<wire x1="78.74" y1="33.02" x2="96.52" y2="33.02" width="0.1524" layer="91"/>
-<label x="96.52" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -16100,13 +16110,13 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <net name="N$6" class="0">
 <segment>
 <pinref part="JP8" gate="G$1" pin="1"/>
-<wire x1="-228.6" y1="20.32" x2="-233.68" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="JP5" gate="G$1" pin="1"/>
 <wire x1="-233.68" y1="20.32" x2="-246.38" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="-246.38" y1="38.1" x2="-233.68" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="-233.68" y1="38.1" x2="-233.68" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="F1" gate="G$1" pin="1"/>
+<wire x1="-231.14" y1="20.32" x2="-233.68" y2="20.32" width="0.1524" layer="91"/>
 <junction x="-233.68" y="20.32"/>
-<pinref part="SW2" gate="G$1" pin="COM"/>
 </segment>
 </net>
 <net name="LED4" class="0">
@@ -16318,8 +16328,8 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 </segment>
 <segment>
 <pinref part="SW2" gate="G$1" pin="2"/>
-<wire x1="-215.9" y1="22.86" x2="-213.36" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="-213.36" y1="22.86" x2="-213.36" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="-205.74" y1="22.86" x2="-200.66" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-200.66" y1="22.86" x2="-200.66" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="P+3" gate="VCC" pin="VCC"/>
 </segment>
 </net>
@@ -16623,7 +16633,7 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <wire x1="7.62" y1="-132.08" x2="12.7" y2="-132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$37" class="0">
+<net name="BM1" class="0">
 <segment>
 <wire x1="148.59" y1="116.84" x2="152.4" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="116.84" x2="152.4" y2="114.3" width="0.1524" layer="91"/>
@@ -16632,7 +16642,7 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <pinref part="L4" gate="G$1" pin="P$2"/>
 </segment>
 </net>
-<net name="N$38" class="0">
+<net name="AM1" class="0">
 <segment>
 <wire x1="148.59" y1="132.08" x2="152.4" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="132.08" x2="152.4" y2="129.54" width="0.1524" layer="91"/>
@@ -16793,6 +16803,11 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <junction x="22.86" y="10.16"/>
 <label x="10.16" y="10.16" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="ICSP" gate="A" pin="4"/>
+<wire x1="157.48" y1="38.1" x2="144.78" y2="38.1" width="0.1524" layer="91"/>
+<label x="152.4" y="38.1" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="RX328" class="0">
 <segment>
@@ -16818,38 +16833,39 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <label x="-167.64" y="-55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U11" gate="A" pin="R"/>
+<pinref part="U9" gate="A" pin="R"/>
 <wire x1="198.12" y1="12.7" x2="177.8" y2="12.7" width="0.1524" layer="91"/>
 <label x="175.26" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="OUTPUT_555" class="0">
 <segment>
-<pinref part="U11" gate="A" pin="Q"/>
+<pinref part="U9" gate="A" pin="Q"/>
 <wire x1="218.44" y1="17.78" x2="238.76" y2="17.78" width="0.1524" layer="91"/>
 <label x="223.52" y="17.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="A"/>
+<pinref part="D1" gate="G$1" pin="A"/>
 <wire x1="213.36" y1="-33.02" x2="213.36" y2="-27.94" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="A"/>
+<pinref part="D2" gate="G$1" pin="A"/>
 <wire x1="213.36" y1="-27.94" x2="231.14" y2="-27.94" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="-27.94" x2="231.14" y2="-33.02" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="-27.94" x2="198.12" y2="-27.94" width="0.1524" layer="91"/>
 <junction x="213.36" y="-27.94"/>
+<label x="198.12" y="-27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$31" class="0">
 <segment>
 <pinref part="C20" gate="G$1" pin="1"/>
 <wire x1="248.92" y1="2.54" x2="248.92" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="U11" gate="A" pin="THR"/>
+<pinref part="U9" gate="A" pin="THR"/>
 <wire x1="218.44" y1="7.62" x2="223.52" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="7.62" x2="243.84" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="7.62" x2="243.84" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="5.08" x2="248.92" y2="5.08" width="0.1524" layer="91"/>
 <junction x="248.92" y="5.08"/>
-<pinref part="U11" gate="A" pin="TR"/>
+<pinref part="U9" gate="A" pin="TR"/>
 <wire x1="198.12" y1="17.78" x2="195.58" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="17.78" x2="195.58" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="27.94" x2="223.52" y2="27.94" width="0.1524" layer="91"/>
@@ -16861,7 +16877,7 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 </net>
 <net name="N$39" class="0">
 <segment>
-<pinref part="U11" gate="A" pin="DIS"/>
+<pinref part="U9" gate="A" pin="DIS"/>
 <wire x1="218.44" y1="12.7" x2="243.84" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="R20" gate="A" pin="3"/>
 <wire x1="243.84" y1="12.7" x2="243.84" y2="48.26" width="0.1524" layer="91"/>
@@ -16873,7 +16889,7 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 </net>
 <net name="N$42" class="0">
 <segment>
-<pinref part="U11" gate="A" pin="CV"/>
+<pinref part="U9" gate="A" pin="CV"/>
 <wire x1="198.12" y1="7.62" x2="177.8" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="C21" gate="G$1" pin="1"/>
 <wire x1="177.8" y1="7.62" x2="177.8" y2="5.08" width="0.1524" layer="91"/>
@@ -16930,27 +16946,41 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <wire x1="-180.34" y1="111.76" x2="-195.58" y2="111.76" width="0.1524" layer="91"/>
 <label x="-203.2" y="111.76" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="ICSP" gate="A" pin="3"/>
+<wire x1="137.16" y1="38.1" x2="121.92" y2="38.1" width="0.1524" layer="91"/>
+<label x="121.92" y="38.1" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="BACK_IR_SENSOR" gate="A" pin="1"/>
+<wire x1="78.74" y1="33.02" x2="96.52" y2="33.02" width="0.1524" layer="91"/>
+<label x="96.52" y="33.02" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$23" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="C"/>
+<pinref part="D1" gate="G$1" pin="C"/>
 <pinref part="R17" gate="G$1" pin="1"/>
 <wire x1="213.36" y1="-38.1" x2="213.36" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$40" class="0">
+<net name="D2" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="C"/>
+<pinref part="D2" gate="G$1" pin="C"/>
 <pinref part="R18" gate="G$1" pin="1"/>
 <wire x1="231.14" y1="-38.1" x2="231.14" y2="-43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$41" class="0">
+<segment>
+<pinref part="SW2" gate="G$1" pin="COM"/>
+<pinref part="F1" gate="G$1" pin="2"/>
+<wire x1="-218.44" y1="20.32" x2="-220.98" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="209,1,198.12,12.7,ENABLE_555,,,,,"/>
-</errors>
 </schematic>
 </drawing>
 </eagle>
